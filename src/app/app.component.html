@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1 class="center">liste de Pokémon</h1>
+            <div class="container">
+                <div class="row">
+                   <div *ngFor="let pokemon of pokemonsList" class="col m4 s6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img [src]="pokemon.picture">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>{{pokemon.name}}</p>
+                                <p><small>{{pokemon.created}}</small></p>
+                            </div>
+                        </div>
+                </div>  
+                    </div>  
+                </div>
+            </div>
+           
+            
+        </body>
+    </html>
